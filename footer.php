@@ -30,10 +30,10 @@
                         </ul><!-- header__social -->
 
                         <ul class="contact">
-                            <li>119 High Road</li>
-                            <li>East Finchley</li>
-                            <li>London</li>
-                            <li>N2 8AG</li>
+                            <li>1 Aird House</li>
+                            <li>High Street</li>
+                            <li>Beauly</li>
+                            <li>IV4 7BS</li>
                         </ul>
 
                     <?php endif; ?>
@@ -46,7 +46,7 @@
 
         <div class="subfooter">
             <div class="subfooter__credits">
-                <img src="<?php echo esc_url(get_stylesheet_directory_uri()); ?>/img/logo.png" alt="<?php bloginfo('name'); ?>">
+                <img src="<?php echo esc_url(get_stylesheet_directory_uri()); ?>/img/logo.jpg" alt="<?php bloginfo('name'); ?>">
                 <p>&copy;<?php bloginfo('name') ?> <?php echo date("Y"); ?></p>
                 <p class="credit"><a href="https://thomson-website-solutions.com/" target="_blank">Website by Thomson Website Solutions</a></p>
             </div><!-- subfooter__credits -->

@@ -32,7 +32,7 @@
                     <div class="header_logo_menu">
                         <div class="logo">
                             <a href="<?php echo esc_url(home_url()); ?>" title="<?php bloginfo('name'); ?>">
-                                <img src="<?php echo esc_url(get_stylesheet_directory_uri()); ?>/img/logo.png" alt="<?php bloginfo('name'); ?>">
+                                <img src="<?php echo esc_url(get_stylesheet_directory_uri()); ?>/img/logo.jpg" alt="<?php bloginfo('name'); ?>">
                             </a>
                         </div><!-- logo -->
                     </div>
@@ -40,8 +40,8 @@
                     <div class="header__cta">
 
                         <ul class="contact">
-                            <li><i class="fa fa-phone"></i><a href="tel:02084442233">020 8444 2233</a></li>
-                            <li><i class="fa fa-envelope"></i><a href="mailto:snrub@talktalk.net">Email Us</a></li>
+                            <li><i class="fa fa-phone"></i><a href="tel:01463782323">01463 78 23 23</a></li>
+                            <li><i class="fa fa-envelope"></i><a href="mailto:reception@fraseroptical.co.uk">Email Us</a></li>
                         </ul>
 
                         <div class="header__menu">
