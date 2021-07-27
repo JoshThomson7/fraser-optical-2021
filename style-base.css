@@ -41,7 +41,6 @@ h1, h2, h3, h4, h5, h6 {
 
 * {
   box-sizing: border-box;
-  -webkit-appearance: none;
   outline: none;
 }
 *:before, *:after {
@@ -28746,7 +28745,7 @@ img {
 /**
 * Buttons
 */
-a.button, button.button {
+a.button, button.button, button {
   display: flex;
   background: #99d3d5;
   align-self: flex-start;
@@ -28755,64 +28754,64 @@ a.button, button.button {
   cursor: pointer;
   border: none;
 }
-a.button span, button.button span {
+a.button span, button.button span, button span {
   font-size: 16px;
   text-align: center;
   color: #FFFFFE;
   line-height: 16px;
   font-family: "Museo 300", sans-serif;
 }
-a.button.primary, button.button.primary {
+a.button.primary, button.button.primary, button.primary {
   background: #535353;
   color: #FFFFFE;
 }
-a.button.primary span, button.button.primary span {
+a.button.primary span, button.button.primary span, button.primary span {
   color: #FFFFFE;
 }
-a.button.secondary, button.button.secondary {
+a.button.secondary, button.button.secondary, button.secondary {
   background: #99d3d5;
   color: #FFFFFE;
 }
-a.button.secondary span, button.button.secondary span {
+a.button.secondary span, button.button.secondary span, button.secondary span {
   color: #FFFFFE;
 }
-a.button.tertiary, button.button.tertiary {
+a.button.tertiary, button.button.tertiary, button.tertiary {
   background: #f7f2de;
   color: #535353;
 }
-a.button.tertiary span, button.button.tertiary span {
+a.button.tertiary span, button.button.tertiary span, button.tertiary span {
   color: #535353;
 }
-a.button.outline, button.button.outline {
+a.button.outline, button.button.outline, button.outline {
   background-color: transparent;
   border: 1px solid #99d3d5;
   color: #535353;
 }
-a.button.outline span, button.button.outline span {
+a.button.outline span, button.button.outline span, button.outline span {
   color: #535353;
 }
-a.button.small, button.button.small {
+a.button.small, button.button.small, button.small {
   padding: 7px 10px;
   color: #535353;
   font-size: 0.8125rem;
   margin: 0;
 }
-a.button.small span, button.button.small span {
+a.button.small span, button.button.small span, button.small span {
   font-size: 0.8125rem;
 }
 @media (max-width: 700px) {
-  a.button, button.button {
+  a.button, button.button, button {
     align-self: center;
   }
 }
-a.button:hover, button.button:hover {
+a.button:hover, button.button:hover, button:hover {
   transition: all 0.4s ease;
   background: #535353;
   box-shadow: 0 3px 30px rgba(0, 0, 0, 0.2);
   transform: scale(1.03);
   color: #FFFFFE;
 }
-a.button:hover span, button.button:hover span {
+a.button:hover span, button.button:hover span, button:hover span {
   color: #FFFFFE;
 }
 
@@ -28854,10 +28853,84 @@ header.header {
   z-index: 999999999;
   top: 0;
 }
+header.header .pre__header {
+  padding: 10px 0;
+  background: #99d3d5;
+}
+header.header .pre__header .max__width {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header.header .pre__header .max__width .contact {
+  display: flex;
+}
+@media (max-width: 1024px) {
+  header.header .pre__header .max__width .contact {
+    margin-right: 30px;
+    margin-bottom: 0;
+  }
+}
+@media (max-width: 625px) {
+  header.header .pre__header .max__width .contact {
+    display: none;
+  }
+}
+header.header .pre__header .max__width .contact li {
+  padding-left: 20px;
+  display: flex;
+  align-items: center;
+}
+header.header .pre__header .max__width .contact li i {
+  color: #FFFFFE;
+  margin-right: 7px;
+  font-size: 22px;
+}
+header.header .pre__header .max__width .contact li a {
+  color: #FFFFFE;
+  font-family: "Museo 300", sans-serif;
+}
+header.header .pre__header .max__width .contact li a:hover {
+  color: #535353;
+}
+header.header .pre__header .max__width .contact li a:hover i {
+  color: #535353;
+}
+header.header .pre__header .max__width .contact li.image {
+  margin-right: 20px;
+}
+@media (max-width: 1024px) {
+  header.header .pre__header .max__width .contact li.image {
+    display: none;
+  }
+}
+header.header .pre__header .max__width .contact li.image img {
+  width: 100px;
+}
+header.header .pre__header .max__width .book_button .book {
+  display: flex;
+  background: #FFFFFE;
+  align-self: flex-start;
+  transition: all 0.4s ease;
+  padding: 12px 30px;
+  cursor: pointer;
+  border: none;
+  color: #99d3d5;
+}
+header.header .pre__header .max__width .book_button .book:hover {
+  transition: all 0.4s ease;
+  background: #535353;
+  box-shadow: 0 3px 30px rgba(0, 0, 0, 0.2);
+  transform: scale(1.03);
+  color: #FFFFFE;
+}
+header.header .pre__header .max__width .book_button .book:hover span {
+  color: #FFFFFE;
+}
 header.header .header__main {
   position: relative;
   background: #FFFFFE;
-  padding: 10px 0 15px;
+  padding: 10px 0;
 }
 @media (max-width: 1024px) {
   header.header .header__main {
@@ -29000,46 +29073,6 @@ header.header .header__main .header__cta .header__menu ul li a i {
   header.header .header__main .header__cta .header__menu ul li a span {
     display: none;
   }
-}
-header.header .header__main .header__cta .contact {
-  margin-bottom: 15px;
-}
-@media (max-width: 1024px) {
-  header.header .header__main .header__cta .contact {
-    margin-right: 30px;
-    margin-bottom: 0;
-  }
-}
-@media (max-width: 625px) {
-  header.header .header__main .header__cta .contact {
-    display: none;
-  }
-}
-header.header .header__main .header__cta .contact li i {
-  color: #535353;
-  margin-right: 7px;
-  font-size: 22px;
-}
-header.header .header__main .header__cta .contact li a {
-  color: #4c4b4f;
-  font-family: "Museo 300", sans-serif;
-}
-header.header .header__main .header__cta .contact li a:hover {
-  color: #99d3d5;
-}
-header.header .header__main .header__cta .contact li a:hover i {
-  color: #FFFFFE;
-}
-header.header .header__main .header__cta .contact li.image {
-  margin-right: 20px;
-}
-@media (max-width: 1024px) {
-  header.header .header__main .header__cta .contact li.image {
-    display: none;
-  }
-}
-header.header .header__main .header__cta .contact li.image img {
-  width: 100px;
 }
 header.header .header__main .header__cta ul {
   display: flex;
@@ -29561,6 +29594,14 @@ footer .subfooter .subfooter__credits p.credit a {
 
 #landingForm .gform_wrapper form .gform_body ul.gform_fields li.gfield .gfield_label {
   color: white !important;
+}
+
+#x3edabac23446401 div {
+  display: flex;
+}
+#x3edabac23446401 div button {
+  margin-right: 10px;
+  font-family: "Museo 300", sans-serif;
 }
 
 /* Gravity forms */
