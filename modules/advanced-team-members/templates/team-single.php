@@ -60,24 +60,7 @@ $team_img = vt_resize($attachment_id,'' , 900, 900, true);
                 <div class="details">
 
                     <div class="item">
-                        <h5>About Work</h5>
-                        <p><?php echo $about_work_response ?></p>
-                    </div>
-
-                    <div class="item">
-                        <h5>About Me</h5>
-                        <p><?php echo $about_you_response ?></p>
-                    </div>
-
-                    <div class="item">
-                        <h5>About My Area</h5>
-                        <p><?php echo $about_area_response ?></p>
-                    </div>
-
-                    <div class="extra-details">
-                        <p>You can find <?php echo $first_name ?> at our <a href="<?php echo $branch_link ?>"><?php echo $branch_text ?></a> branch</p>
-
-                        <a  class="video-link" href="#">Watch <?php echo $first_name ?>'s video here</a>
+                        <p><?php echo the_content(); ?></p>
                     </div>
 
                 </div>
@@ -85,7 +68,7 @@ $team_img = vt_resize($attachment_id,'' , 900, 900, true);
 
             <div class="right">
 
-                <div class="contact">
+                <!-- <div class="contact">
                     <div class="phone">
                         <i class="fa fa-phone"></i>
                         <a href="tel:020887994362"><?php echo $team_phone ?></a>
@@ -96,7 +79,7 @@ $team_img = vt_resize($attachment_id,'' , 900, 900, true);
                         <a href="mailto:<?php echo $team_email ?>"><?php echo $team_email ?></a>
                     </div>
 
-                </div>
+                </div> -->
 
                 <img src="<?php echo $team_img['url']; ?>" alt="">
 
@@ -109,41 +92,6 @@ $team_img = vt_resize($attachment_id,'' , 900, 900, true);
             </div>
         </div>
 
-        <div class="about-my-photo">   
-
-            <div class="details<?php echo $team_photo_hide_section ?>">
-
-                <div class="left">
-                    <?php echo $about_photo_image ?>
-                </div>
-
-                <div class="right">
-                    <h3>What I Love About The Neighbourhood</h3>
-                    <p><?php echo $about_photo_response ?></p>
-
-                    <div class="social">
-                        <?php if($team_website) :?>
-                            <a target="_blank" href="<?php echo $team_website ?>"><i class="fa fa-globe"></i></a>
-                        <?php endif; ?>                        
-
-                        <?php if($team_facebook) :?>
-                            <a target="_blank" href="<?php echo $team_facebook ?>"><i class="fab fa-facebook"></i></a>
-                        <?php endif; ?>                        
-                        
-                        <?php if($team_twitter) :?>
-                            <a target="_blank" href="<?php echo $team_twitter ?>"><i class="fab fa-twitter"></i></a>
-                        <?php endif; ?>                        
-
-                        <?php if($team_instagram) :?>    
-                        <a target="_blank" href="<?php echo $team_instagram ?>"><i class="fab fa-instagram"></i></a>
-                        <?php endif; ?>                        
-
-                    </div>
-                </div>
-
-            </div>
-
-        </div>
     </div>
 
 </div>
