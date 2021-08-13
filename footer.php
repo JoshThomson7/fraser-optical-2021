@@ -16,6 +16,17 @@
 
                 <?php endwhile; ?>
 
+                <article class="footer__menu">
+                    <h5>Find Us <span class="ion-ios-plus-empty"></span></h5>
+
+                    <ul class="contact">
+                        <li>1 Aird House</li>
+                        <li>High Street</li>
+                        <li>Beauly</li>
+                        <li>IV4 7BS</li>
+                    </ul>
+                </article>
+
                 <article class="footer__menu social">
                    <h5>Follow Us <span class="ion-ios-plus-empty"></span></h5>
                     <?php if(get_field('header_social', 'options')): ?>
@@ -28,13 +39,6 @@
                                 </li>
                             <?php endwhile; ?>
                         </ul><!-- header__social -->
-
-                        <ul class="contact">
-                            <li>1 Aird House</li>
-                            <li>High Street</li>
-                            <li>Beauly</li>
-                            <li>IV4 7BS</li>
-                        </ul>
 
                     <?php endif; ?>
 
