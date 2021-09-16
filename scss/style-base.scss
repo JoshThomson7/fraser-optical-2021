@@ -301,7 +301,7 @@ header.header { width:100%; transition: top .3s ease; position: sticky; z-index:
         }
     }
 
-    .header__main { position: relative; background: $white;
+    .header__main { position: relative; background: $white; border-bottom: 2px solid $secondary;
         @include breakpoint(papabear) { padding: 5px 0;}
 
         .max__width { display: flex; justify-content: space-between; align-items: center;}
@@ -602,6 +602,16 @@ footer { padding: 0; position: relative;
 
                     p{
                         color: $white; padding-bottom: 5px;
+                    }
+                }
+
+                .contact{
+                    a{
+                        color: white; line-height: 24px;
+
+                        &:hover{
+                            color: $secondary;
+                        }
                     }
                 }
                 

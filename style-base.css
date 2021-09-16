@@ -23104,20 +23104,21 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
 }
 .oc__nav .panel__left {
   width: 40%;
-  padding: 150px 60px 0 0;
+  padding: 160px 60px 0 0;
   transform: translateX(-1200px);
 }
 @media (max-width: 900px) {
   .oc__nav .panel__left {
     width: 100%;
     background: #fff;
-    padding: 95px 20px 40px;
+    padding: 165px 20px 40px;
   }
 }
 .oc__nav .panel__right {
   width: 60%;
   padding: 100px 0 40px 60px;
   transform: translateX(1200px);
+  displaY: none;
 }
 @media (max-width: 900px) {
   .oc__nav .panel__right {
@@ -28930,6 +28931,7 @@ header.header .pre__header .max__width .book_button .book:hover span {
 header.header .header__main {
   position: relative;
   background: #FFFFFE;
+  border-bottom: 2px solid #99d3d5;
 }
 @media (max-width: 1024px) {
   header.header .header__main {
@@ -29415,6 +29417,13 @@ footer .footer__menus .max__width article.social .contact {
 footer .footer__menus .max__width article.social p {
   color: #FFFFFE;
   padding-bottom: 5px;
+}
+footer .footer__menus .max__width article .contact a {
+  color: white;
+  line-height: 24px;
+}
+footer .footer__menus .max__width article .contact a:hover {
+  color: #99d3d5;
 }
 footer .subfooter {
   background: #FFFFFE;

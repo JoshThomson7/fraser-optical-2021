@@ -11,7 +11,7 @@ Team (Custom)
             $team_id = $team_member->ID;
 
             $attachment_id = get_post_thumbnail_id($team_id);
-            $team_img = vt_resize($attachment_id,'' , 900, 900, true);
+            $team_img = vt_resize($attachment_id,'' , 450, 450, true);
 
             $team_name = get_the_title($team_id);
             $first_name = explode(' ', $team_name);
