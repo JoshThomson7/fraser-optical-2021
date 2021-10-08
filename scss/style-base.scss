@@ -196,7 +196,7 @@ img { max-width: 100%; width: auto; height: auto; vertical-align: middle; border
 /**
 * Buttons
 */
-a.button, button.button, button { display: flex; background: $secondary; align-self: flex-start; transition: all .4s ease; padding: 18px 40px 18px; cursor: pointer; border: none;
+a.button, button.button, button, input[type=submit], input[type=button] { display: flex; background: $secondary; align-self: flex-start; transition: all .4s ease; padding: 18px 40px 18px; cursor: pointer; border: none;
     span { font-size: 16px; text-align: center; color: $white; line-height: 16px; font-family: $primaryFont;
     }
 
@@ -830,11 +830,75 @@ footer { padding: 0; position: relative;
 // XEYEX BOOKING
 #x3edabac23446401{
     div{
-        display: flex;
+        display: flex; justify-content: center;
 
         button{
-            margin-right: 10px; font-family: $primaryFont;
+            margin-right: 10px; font-family: $primaryFont; color: white;
         }
+
+        table{
+            margin: 0 20px;
+        }
+    }
+
+    .xeyexAppTimes{
+        flex-direction: column; align-items: center;
+
+        div{
+            display: flex; flex-direction: row; align-items: center;
+        }
+
+        button{
+            margin: 8px 10px;
+        }
+    }
+
+    form{
+        #pxDetails{
+            flex-direction: column;
+
+            .xeyexSubHeader{
+                padding-bottom: 10px; color: $secondary; margin-top: 20px; font-size: 20px;
+            }
+
+            .xeyexFieldMaster{
+                padding-bottom: 10px;
+
+                label{
+                    padding-right: 10px;
+                }
+
+                #xeyexPMS_dob{
+                    select{
+                        margin-right: 5px;
+                    }
+                }
+            }
+
+            input[type=submit]{
+                color: white; align-self: center!important; margin-top: 20px;
+            }
+        }
+    }
+
+    .s7css{
+        flex-direction: column; margin-bottom: 30px;
+
+        .s7cssxeyexCFMTitle, .s7cssxeyexCFMTitle{
+           color: $secondary; font-size: 18px; margin-bottom: 10px;
+        }
+    }
+
+    #s7AppointmentType, #Time, #s7YourDetails{ 
+        width: 25%;
+    }
+
+    #s7YourDetails p{
+        margin: 0; line-height: 20px;
+    }
+
+    input[type=button]{
+        color: white; align-self: center!important; margin: 20px auto 0;
     }
 }
 

@@ -28746,7 +28746,7 @@ img {
 /**
 * Buttons
 */
-a.button, button.button, button {
+a.button, button.button, button, input[type=submit], input[type=button] {
   display: flex;
   background: #99d3d5;
   align-self: flex-start;
@@ -28755,64 +28755,64 @@ a.button, button.button, button {
   cursor: pointer;
   border: none;
 }
-a.button span, button.button span, button span {
+a.button span, button.button span, button span, input[type=submit] span, input[type=button] span {
   font-size: 16px;
   text-align: center;
   color: #FFFFFE;
   line-height: 16px;
   font-family: "Museo 300", sans-serif;
 }
-a.button.primary, button.button.primary, button.primary {
+a.button.primary, button.button.primary, button.primary, input[type=submit].primary, input[type=button].primary {
   background: #535353;
   color: #FFFFFE;
 }
-a.button.primary span, button.button.primary span, button.primary span {
+a.button.primary span, button.button.primary span, button.primary span, input[type=submit].primary span, input[type=button].primary span {
   color: #FFFFFE;
 }
-a.button.secondary, button.button.secondary, button.secondary {
+a.button.secondary, button.button.secondary, button.secondary, input[type=submit].secondary, input[type=button].secondary {
   background: #99d3d5;
   color: #FFFFFE;
 }
-a.button.secondary span, button.button.secondary span, button.secondary span {
+a.button.secondary span, button.button.secondary span, button.secondary span, input[type=submit].secondary span, input[type=button].secondary span {
   color: #FFFFFE;
 }
-a.button.tertiary, button.button.tertiary, button.tertiary {
+a.button.tertiary, button.button.tertiary, button.tertiary, input[type=submit].tertiary, input[type=button].tertiary {
   background: #6dcbce;
   color: #535353;
 }
-a.button.tertiary span, button.button.tertiary span, button.tertiary span {
+a.button.tertiary span, button.button.tertiary span, button.tertiary span, input[type=submit].tertiary span, input[type=button].tertiary span {
   color: #535353;
 }
-a.button.outline, button.button.outline, button.outline {
+a.button.outline, button.button.outline, button.outline, input[type=submit].outline, input[type=button].outline {
   background-color: transparent;
   border: 1px solid #99d3d5;
   color: #535353;
 }
-a.button.outline span, button.button.outline span, button.outline span {
+a.button.outline span, button.button.outline span, button.outline span, input[type=submit].outline span, input[type=button].outline span {
   color: #535353;
 }
-a.button.small, button.button.small, button.small {
+a.button.small, button.button.small, button.small, input[type=submit].small, input[type=button].small {
   padding: 7px 10px;
   color: #535353;
   font-size: 0.8125rem;
   margin: 0;
 }
-a.button.small span, button.button.small span, button.small span {
+a.button.small span, button.button.small span, button.small span, input[type=submit].small span, input[type=button].small span {
   font-size: 0.8125rem;
 }
 @media (max-width: 700px) {
-  a.button, button.button, button {
+  a.button, button.button, button, input[type=submit], input[type=button] {
     align-self: center;
   }
 }
-a.button:hover, button.button:hover, button:hover {
+a.button:hover, button.button:hover, button:hover, input[type=submit]:hover, input[type=button]:hover {
   transition: all 0.4s ease;
   background: #535353;
   box-shadow: 0 3px 30px rgba(0, 0, 0, 0.2);
   transform: scale(1.03);
   color: #FFFFFE;
 }
-a.button:hover span, button.button:hover span, button:hover span {
+a.button:hover span, button.button:hover span, button:hover span, input[type=submit]:hover span, input[type=button]:hover span {
   color: #FFFFFE;
 }
 
@@ -29661,10 +29661,71 @@ footer .subfooter .subfooter__credits p.credit a {
 
 #x3edabac23446401 div {
   display: flex;
+  justify-content: center;
 }
 #x3edabac23446401 div button {
   margin-right: 10px;
   font-family: "Museo 300", sans-serif;
+  color: white;
+}
+#x3edabac23446401 div table {
+  margin: 0 20px;
+}
+#x3edabac23446401 .xeyexAppTimes {
+  flex-direction: column;
+  align-items: center;
+}
+#x3edabac23446401 .xeyexAppTimes div {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+#x3edabac23446401 .xeyexAppTimes button {
+  margin: 8px 10px;
+}
+#x3edabac23446401 form #pxDetails {
+  flex-direction: column;
+}
+#x3edabac23446401 form #pxDetails .xeyexSubHeader {
+  padding-bottom: 10px;
+  color: #99d3d5;
+  margin-top: 20px;
+  font-size: 20px;
+}
+#x3edabac23446401 form #pxDetails .xeyexFieldMaster {
+  padding-bottom: 10px;
+}
+#x3edabac23446401 form #pxDetails .xeyexFieldMaster label {
+  padding-right: 10px;
+}
+#x3edabac23446401 form #pxDetails .xeyexFieldMaster #xeyexPMS_dob select {
+  margin-right: 5px;
+}
+#x3edabac23446401 form #pxDetails input[type=submit] {
+  color: white;
+  align-self: center !important;
+  margin-top: 20px;
+}
+#x3edabac23446401 .s7css {
+  flex-direction: column;
+  margin-bottom: 30px;
+}
+#x3edabac23446401 .s7css .s7cssxeyexCFMTitle, #x3edabac23446401 .s7css .s7cssxeyexCFMTitle {
+  color: #99d3d5;
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+#x3edabac23446401 #s7AppointmentType, #x3edabac23446401 #Time, #x3edabac23446401 #s7YourDetails {
+  width: 25%;
+}
+#x3edabac23446401 #s7YourDetails p {
+  margin: 0;
+  line-height: 20px;
+}
+#x3edabac23446401 input[type=button] {
+  color: white;
+  align-self: center !important;
+  margin: 20px auto 0;
 }
 
 /* Gravity forms */
