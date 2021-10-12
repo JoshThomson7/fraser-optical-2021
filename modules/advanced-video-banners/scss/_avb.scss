@@ -52,12 +52,11 @@ section.banners { position: relative; overflow: hidden;
 
             h2 { font-size: 60px; color: #fff; font-weight: normal; padding: 0 0 40px; line-height: 64px; font-family: $boldFont;
                 @include breakpoint(brotherbear) { font-size: 32px; line-height: 32px;}
-                @include breakpoint(mamabear) {  font-size: 28px; line-height: 30px; text-align: center;}
+                @include breakpoint(mamabear) {  font-size: 42px; line-height: 50px; text-align: center;}
             }
 
             p { font-size: 18px; color: $white; line-height: 30px; padding: 0 0 40px;
-                @include breakpoint(brotherbear) { font-size: 16px; line-height: 23px;}
-                @include breakpoint(mamabear) { text-align: center; padding-right: 0;}
+                @include breakpoint(mamabear) { font-size: 26px; line-height: 34px; text-align: center; padding-right: 0;}
             }
 
             .banner__shortcuts { display: flex; align-items: center; border: 1px rgba(255,255,255,0.5) solid; margin-top: 30px; align-self: center; padding: 7px 0; width: 100%;

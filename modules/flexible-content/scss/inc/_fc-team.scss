@@ -17,6 +17,7 @@ Team
         article { width:percentage(1/4); margin-bottom: 40px;
 
             @include breakpoint(mamabear) { width:percentage(1/2);}
+            @include breakpoint(teenbear) { width:percentage(1/1);}
 
             a { display:block; margin:5px; position:relative; border-radius: 5px; box-shadow: 0px 1px 7px rgba(0,0,0,0.1); border-radius: 5px; overflow: hidden;
                 .team__overlay { width:100%; height:100%; position:absolute; left:0; top:0; opacity:0; transition:opacity 1s ease; display:flex; flex-direction:column; justify-content:center; display: flex; justify-content: center; align-items: center; border-radius: 3px;

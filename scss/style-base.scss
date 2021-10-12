@@ -255,6 +255,7 @@ header.header { width:100%; transition: top .3s ease; position: sticky; z-index:
 
         .max__width{
             display: flex; justify-content: space-between; align-items: center;
+            @include breakpoint(teenbear){justify-content: center;}
 
             .contact{
                 display: flex;
@@ -288,7 +289,7 @@ header.header { width:100%; transition: top .3s ease; position: sticky; z-index:
             }
 
             .book_button{
-                .book{
+                .book{ 
                     display: flex; background: $white; align-self: flex-start; transition: all 0.4s ease; padding: 12px 30px; cursor: pointer; border: none; color: $secondary;
 
                     &:hover { transition: all .4s ease; background: $primary; box-shadow: 0 3px 30px rgba(black, 0.2); transform: scale(1.03); color: $white; 
@@ -330,6 +331,7 @@ header.header { width:100%; transition: top .3s ease; position: sticky; z-index:
                 a { display:block;
                     img { width: 88px; align-self:center; margin: 0 auto;
                         @include breakpoint(papabear) { width: 120px;}
+                        @include breakpoint(teenbear) { width: 80px;}
                     }
                 }
             }
@@ -548,11 +550,16 @@ footer { padding: 0; position: relative;
         .max__width{
             padding: 40px 60px 20px; display:flex;
             @include breakpoint(papabear) { flex-direction:column;}
+            @include breakpoint(teenbear) { padding: 20px;}
 
             article {
                 width: 25%;
                 
                 @include breakpoint(papabear) { width:100%; border-bottom: 1px $border solid;}
+
+                &.find-us{
+                    margin-bottom: 30px; border-bottom: none;
+                }
 
                 h5 { font-size: 20px; font-weight: 600; color: $white; padding-bottom:20px;
                     @include breakpoint(papabear) { padding:20px 0; cursor:pointer;}
@@ -648,6 +655,7 @@ footer { padding: 0; position: relative;
 
 .team__single__container{
     padding: 60px 0; background: #f0f7fd; //margin-top: 54px;
+    @include breakpoint(teenbear){ padding: 10px 0;}
 
     .breadcrumbs{ padding-left: 0; padding-right: 0;}
     
@@ -831,9 +839,14 @@ footer { padding: 0; position: relative;
 #x3edabac23446401{
     div{
         display: flex; justify-content: center;
+        @include breakpoint(teenbear){
+            flex-direction: column; align-items: center;
+        }
 
         button{
             margin-right: 10px; font-family: $primaryFont; color: white;
+            @include breakpoint(teenbear){ margin-bottom: 10px;}
+
         }
 
         table{
@@ -846,6 +859,9 @@ footer { padding: 0; position: relative;
 
         div{
             display: flex; flex-direction: row; align-items: center;
+            @include breakpoint(teenbear){
+                flex-direction: column;
+            }
         }
 
         button{

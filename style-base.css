@@ -24016,8 +24016,8 @@ section.banners .banner__caption h2 {
 }
 @media (max-width: 700px) {
   section.banners .banner__caption h2 {
-    font-size: 28px;
-    line-height: 30px;
+    font-size: 42px;
+    line-height: 50px;
     text-align: center;
   }
 }
@@ -24027,14 +24027,10 @@ section.banners .banner__caption p {
   line-height: 30px;
   padding: 0 0 40px;
 }
-@media (max-width: 900px) {
-  section.banners .banner__caption p {
-    font-size: 16px;
-    line-height: 23px;
-  }
-}
 @media (max-width: 700px) {
   section.banners .banner__caption p {
+    font-size: 26px;
+    line-height: 34px;
     text-align: center;
     padding-right: 0;
   }
@@ -24891,6 +24887,11 @@ Flexible Content
   display: flex;
   font-family: "Museo 700";
 }
+@media (max-width: 625px) {
+  .flexible__content .section__heading h2 {
+    font-size: 24px;
+  }
+}
 .flexible__content .section__heading p {
   margin: 15px 0 0;
   font-size: 1rem;
@@ -24974,7 +24975,6 @@ Flexible Content
   margin: 0 0 20px 0;
   padding: 0;
   font-family: "Museo 300", sans-serif;
-  font-weight: 700;
   color: #23adb2;
 }
 .flexible__content h2 {
@@ -25218,6 +25218,12 @@ Flexible Content
   font-size: 30px;
   line-height: 36px;
   font-family: "Museo 700";
+}
+@media (max-width: 625px) {
+  .flexible__content .fc_feature .fc_feature_wrapper .feature__text h3 {
+    font-size: 22px;
+    line-height: 30px;
+  }
 }
 .flexible__content .fc_feature .fc_feature_wrapper .feature__text p {
   font-size: 16px;
@@ -25477,8 +25483,12 @@ Flexible Content
   margin: 0;
   cursor: pointer;
   line-height: 28px;
-  font-weight: 600;
   transition: all 0.2s ease;
+}
+@media (max-width: 625px) {
+  .flexible__content .fc_accordion .accordion__wrap h3 {
+    font-size: 16px;
+  }
 }
 .flexible__content .fc_accordion .accordion__wrap h3 i {
   display: block;
@@ -25884,6 +25894,12 @@ Flexible Content
   .flexible__content .fc_team .team__wrap article,
 .flexible__content .fc_team_full .team__wrap article {
     width: 50%;
+  }
+}
+@media (max-width: 625px) {
+  .flexible__content .fc_team .team__wrap article,
+.flexible__content .fc_team_full .team__wrap article {
+    width: 100%;
   }
 }
 .flexible__content .fc_team .team__wrap article a,
@@ -26599,6 +26615,11 @@ Flexible Content
   flex-wrap: wrap;
   margin: 0 10px;
 }
+@media (max-width: 625px) {
+  .flexible__content .fc_grid_boxes .grid__boxes__wrapper {
+    margin: 0;
+  }
+}
 .flexible__content .fc_grid_boxes .grid__boxes__wrapper article {
   display: flex;
   align-items: center;
@@ -26677,7 +26698,11 @@ Flexible Content
 }
 .flexible__content .fc_grid_boxes .grid__boxes__wrapper article.one__third {
   width: 33.3333333333%;
-  flex: 1 0 400px;
+}
+@media (max-width: 625px) {
+  .flexible__content .fc_grid_boxes .grid__boxes__wrapper article.one__third {
+    flex: 1 0 100%;
+  }
 }
 .flexible__content .fc_grid_boxes .grid__boxes__wrapper article.one__fourth {
   width: 25%;
@@ -26928,6 +26953,11 @@ Flexible Content
   margin-bottom: 0;
   border-bottom: none;
   display: block;
+}
+@media (max-width: 625px) {
+  .flexible__content .fc_testimonials .testimonials__wrapper.grid article {
+    width: 100%;
+  }
 }
 .flexible__content .fc_testimonials .testimonials__wrapper.grid article .testimonial__meta {
   flex-direction: column;
@@ -28863,6 +28893,11 @@ header.header .pre__header .max__width {
   justify-content: space-between;
   align-items: center;
 }
+@media (max-width: 625px) {
+  header.header .pre__header .max__width {
+    justify-content: center;
+  }
+}
 header.header .pre__header .max__width .contact {
   display: flex;
 }
@@ -28990,6 +29025,11 @@ header.header .header__main .header_logo_menu .logo a img {
 @media (max-width: 1024px) {
   header.header .header__main .header_logo_menu .logo a img {
     width: 120px;
+  }
+}
+@media (max-width: 625px) {
+  header.header .header__main .header_logo_menu .logo a img {
+    width: 80px;
   }
 }
 header.header .header__main .header__cta {
@@ -29309,6 +29349,11 @@ footer .footer__menus .max__width {
     flex-direction: column;
   }
 }
+@media (max-width: 625px) {
+  footer .footer__menus .max__width {
+    padding: 20px;
+  }
+}
 footer .footer__menus .max__width article {
   width: 25%;
 }
@@ -29317,6 +29362,10 @@ footer .footer__menus .max__width article {
     width: 100%;
     border-bottom: 1px #e1e9ee solid;
   }
+}
+footer .footer__menus .max__width article.find-us {
+  margin-bottom: 30px;
+  border-bottom: none;
 }
 footer .footer__menus .max__width article h5 {
   font-size: 20px;
@@ -29468,6 +29517,11 @@ footer .subfooter .subfooter__credits p.credit a {
 .team__single__container {
   padding: 60px 0;
   background: #f0f7fd;
+}
+@media (max-width: 625px) {
+  .team__single__container {
+    padding: 10px 0;
+  }
 }
 .team__single__container .breadcrumbs {
   padding-left: 0;
@@ -29663,10 +29717,21 @@ footer .subfooter .subfooter__credits p.credit a {
   display: flex;
   justify-content: center;
 }
+@media (max-width: 625px) {
+  #x3edabac23446401 div {
+    flex-direction: column;
+    align-items: center;
+  }
+}
 #x3edabac23446401 div button {
   margin-right: 10px;
   font-family: "Museo 300", sans-serif;
   color: white;
+}
+@media (max-width: 625px) {
+  #x3edabac23446401 div button {
+    margin-bottom: 10px;
+  }
 }
 #x3edabac23446401 div table {
   margin: 0 20px;
@@ -29679,6 +29744,11 @@ footer .subfooter .subfooter__credits p.credit a {
   display: flex;
   flex-direction: row;
   align-items: center;
+}
+@media (max-width: 625px) {
+  #x3edabac23446401 .xeyexAppTimes div {
+    flex-direction: column;
+  }
 }
 #x3edabac23446401 .xeyexAppTimes button {
   margin: 8px 10px;
